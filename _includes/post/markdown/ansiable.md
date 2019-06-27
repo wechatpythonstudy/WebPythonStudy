@@ -146,7 +146,6 @@ show ip route 192.0.0.2
 
 
 #### success
-
 ptf --test-dir ptftests dhcp_relay_test.DHCPTest   --platform-dir ptftests  --platform remote  -t "hostname=\"48S-wz\";client_port_index=\"0\";client_iface_alias=\"tenGigE1\";leaf_port_indices=\"[47, 46]\";num_dhcp_servers=\"4\";server_ip=\"192.0.0.1\";relay_iface_ip=\"192.168.0.1\";relay_iface_mac=\"00:a0:c9:00:00:00\";relay_iface_netmask=\"255.255.248.0\""  --relax 2>&1
 
 ptf --test-dir ptftests dhcp_relay_test.DHCPTest   --platform-dir ptftests  --platform remote  -t \"hostname=\"48S-wz\";client_port_index=\"0\";client_iface_alias=\"tenGigE1\";leaf_port_indices=\\\"[47, 46]\";num_dhcp_servers=\"4\";server_ip=\"192.0.0.1\";relay_iface_ip=\"192.168.0.1\";relay_iface_mac=\"00:a0:c9:00:00:00\";relay_iface_netmask=\"255.255.248.0\""  --relax 2>&1
