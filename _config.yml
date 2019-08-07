@@ -1,0 +1,126 @@
+# Site settings
+title: MrLycorious
+SEOTitle: MrLyorious's Website
+header-img: img/home-bg.jpg
+email: wangzhui@foxmail.com
+description: "Developer"
+keyword: "keyword"
+url: "https://www.wangzhui.site"              # your host, for absolute URL
+#baseurl: "/blog"                            				# for example, '/blog' if your blog hosted on 'host/blog'
+#baseurlnext: "https://www.wangzhui.site/index.htm"                            				# for example, '/blog' if your blog hosted on 'host/blog'
+nm: true
+header-mask:  0.5
+
+# SNS settings
+RSS: false
+weibo_username:     MrLycorious
+zhihu_username:     wang-zhui-46/activities
+github_username:    zhuiwang
+twitter_username:   MrLycorious
+#facebook_username:  MrLycorious
+#linkedin_username:  firstname-lastname-idxxxx
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 8
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+#paginate_path: "/blog/:num/"
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+plugins: ["jekyll-paginate","jekyll-mermaid"]
+
+mermaid:
+    src: './js/mermaid.js'
+    src_config: '/js/mermaid_config.js'
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+disqus_username: wangzhui
+
+# Netease setttings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain: MrLycorious.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description:  "Description of MrLycorious"
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-kathy:  /img/kathy.jpg
+
+
+# Featured Tags
+featured-book-tags: true
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+    #     title: "Su",
+    #     href: "http://su.gallery/",
+    # },{
+        title: "MrLycorious",
+        href: "http://www.wangzhui.site/"
+        }
+]
+
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: a5972b0a3909568175a6                          #生成的clientID
+  clientSecret: 44fefe796f39504981e555b9264eabd3fcbebcad   #生成的clientSecret
+  repo:  blog-comment   #仓库名称
+  owner: zhuiwang    #github用户名
+  admin: zhuiwang
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+## => Markdown Enhancements
+##############################
+## Mathjax
+mathjax: true # false (default), true
+mathjax_autoNumber: true # false (default), true
+
+## Mermaid
+mermaid: true # false (default), true
+
+## Chart
+chart: true # false (default), true
+

@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Archives"
+description: "博文归档"
+multilingual: false
+header-img: "img/home-bg.jpg"
+---
+
+<style>
+@media screen and (min-width: 768px) {
+    .element {
+        display: table-cell;
+        vertical-align: middle;
+        float: none !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .row {
+        position: relative;
+        top: -20px;
+        margin-bottom: 10px;
+    }
+    hr {
+        margin-top: 0px;
+    }
+    .cb-title-top {
+        margin-top: 40px;
+    }
+}
+</style>
+
+<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected>  By year </option>
+    <option value="1">  By tags </option>
+</select>
+
+<div class="zh post-container">
+    <div class="row">
+            <ul>
+		<div class="col-lg-3 col-lg-offset-2 col-md-10 col-md-offset-1">
+              {% for post in site.posts %}
+                  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                  {% if year != nyear %}
+                     <h3>{{ post.date | date: '%Y' }}</h3>
+                  {% endif %}
+                
+                <li>{{ post.date | date:"%b" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+
+              {% endfor %}
+		</div>
+            </ul>
+    </div>
+</div>
+<div class="en post-container">
+	<div class="row">
+            <ul>
+            {% for tag in site.tags %}
+		<div class="col-lg-3 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <span id="{{ tag[0] }}">
+                    <span class="tag-text"><h3>{{ tag[0] }}</h3></span>
+                </span>
+                {% for post in tag[1] %}
+                <li> 
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        {{ post.title }}
+                    </a>
+                </li>
+                {% endfor %}
+		</div>
+            {% endfor %}
+            </ul>
+
+	</div>
+
+</div>
+
+
