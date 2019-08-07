@@ -1,11 +1,11 @@
 # Site settings
-title: MrLycorious
-SEOTitle: MrLyorious's Website
+title: WeChatPythonStudy
+SEOTitle: Ours' Website
 header-img: img/home-bg.jpg
 email: wangzhui@foxmail.com
 description: "Developer"
 keyword: "keyword"
-url: "https://www.wangzhui.site"              # your host, for absolute URL
+url: ""              # your host, for absolute URL
 #baseurl: "/blog"                            				# for example, '/blog' if your blog hosted on 'host/blog'
 #baseurlnext: "https://www.wangzhui.site/index.htm"                            				# for example, '/blog' if your blog hosted on 'host/blog'
 nm: true
@@ -13,10 +13,10 @@ header-mask:  0.5
 
 # SNS settings
 RSS: false
-weibo_username:     MrLycorious
-zhihu_username:     wang-zhui-46/activities
-github_username:    zhuiwang
-twitter_username:   MrLycorious
+weibo_username:     Python Study
+zhihu_username:     none
+github_username:    none
+twitter_username:   none
 #facebook_username:  MrLycorious
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -53,7 +53,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: wangzhui
+disqus_username: none
 
 # Netease setttings
 netease_comment: false
@@ -72,9 +72,9 @@ ga_domain: MrLycorious.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description:  "Description of MrLycorious"
-sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-sidebar-kathy:  /img/kathy.jpg
+sidebar-about-description:  "Description of"
+sidebar-avatar: /img/shenzai.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-wechatgroup:  /img/wechatgroup.png
 
 
 # Featured Tags
