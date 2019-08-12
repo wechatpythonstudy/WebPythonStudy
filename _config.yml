@@ -104,10 +104,10 @@ friends: [
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: a5972b0a3909568175a6                          #生成的clientID
-  clientSecret: 44fefe796f39504981e555b9264eabd3fcbebcad   #生成的clientSecret
+  clientID: 2ec70d0ec18d1abed9da       #生成的clientID
+  clientSecret: be4cb5a22da1ee365494da52f87a5068e2c0746a  #生成的clientSecret
   repo:  blog-comment   #仓库名称
-  owner: zhuiwang    #github用户名
+  owner: zhuiwang   #github用户名
   admin: zhuiwang
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
