@@ -108,7 +108,7 @@ gitalk:
   clientSecret: be4cb5a22da1ee365494da52f87a5068e2c0746a  #生成的clientSecret
   repo:  talk   #仓库名称
   owner: zhuiwang   #github用户名
-  admin: zhuiwang
+  admin: wechatpythonstudy
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
